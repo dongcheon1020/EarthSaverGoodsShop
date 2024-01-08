@@ -229,28 +229,20 @@ $(document).ready(function () {
   });
 
   let videoImg = [
-    "../images/video1.mp4",
-    "../images/video2.mp4",
-    "../images/video3.mp4",
+    "images/video1.mp4",
+    "images/video2.mp4",
+    "images/video3.mp4",
   ];
   let video = 0;
   $(".videodot").click(function () {
     $(this).parents().siblings("video").attr("src", videoImg[$(this).index()]);
   });
 
-  let discountImg = [
-    "../images/dci1.jpg",
-    "../images/dci2.jpg",
-    "../images/dci3.jpg",
-  ];
+  let discountImg = ["images/dci1.jpg", "images/dci2.jpg", "images/dci3.jpg"];
   $(".discount-img-dot1").click(function () {
     $(this).parents().siblings("img").attr("src", discountImg[$(this).index()]);
   });
-  const discountImg1 = [
-    "../images/ss1.jpg",
-    "../images/ss2.jpg",
-    "../images/ss3.jpg",
-  ];
+  const discountImg1 = ["images/ss1.jpg", "images/ss2.jpg", "images/ss3.jpg"];
   $(".discount-img-dot2").click(function () {
     $(this)
       .parents()
